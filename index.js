@@ -5,12 +5,12 @@ const cors = require("cors");
 const PORT = 5000;
 
 // coneect your DB KRNA
-connectDB();
+connectDB()
 
 app.use(cors());
 
 
-app.use(express.json());
+app.use(express.json({ extended: false }))
 
 const user = require('./routes/users');
 
